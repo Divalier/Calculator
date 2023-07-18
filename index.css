@@ -1,0 +1,97 @@
+body {
+  background-color: #06041f;
+  margin: 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.containers {
+  width: 50vw;
+  height: 100vh;
+}
+.calc {
+  padding: 8px;
+  box-shadow: 0 0 4px 0 white;
+}
+
+.display {
+  height: 90px;
+  width: 100%;
+  box-shadow: 0 0 2px 0 white;
+  margin: 2px 2px 10px 2px;
+  box-sizing: border-box;
+  background-color: #66ad85;
+  color: black;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.maindis {
+  height: 60px;
+  width: 100%;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.subdis {
+  height: 20px;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.brush {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+}
+
+.button {
+  display: flex;
+  flex-wrap: warp;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 350px;
+  margin: 0px;
+}
+
+.button button {
+  color: white;
+  font-weight: 700;
+  font-size: 21px;
+  background-color: inherit;
+  height: 50px;
+  width: 200px;
+  margin: 3px;
+}
+
+#erase {
+  border-right: solid white 2px;
+  border-bottom: solid white 2px;
+}
+
+#reset {
+  border-right: solid red 2px;
+  border-bottom: solid red 2px;
+}
+
+#Random {
+  border-right: solid Yellow 2px;
+  border-bottom: solid green 2px;
+}
+
+.button button:hover {
+  box-shadow: 0 0 4px 0 white;
+}
