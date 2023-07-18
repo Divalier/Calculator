@@ -37,7 +37,6 @@ let calc = (e) => {
       document.getElementById("subdis").innerHTML = sub;
       main = "";
       document.getElementById("maindis").innerHTML = main;
-      alert("move one");
     } else if (mov == 2) {
       mov = 3;
 
@@ -45,9 +44,7 @@ let calc = (e) => {
       document.getElementById("subdis").innerHTML = sub;
       main = "";
       document.getElementById("maindis").innerHTML = main;
-      alert(
-        "first num is " + first + "second nun is" + sec + "sign is " + char
-      );
+
       calucalate(char);
       char = e;
       movv = 2;
@@ -56,7 +53,6 @@ let calc = (e) => {
       document.getElementById("subdis").innerHTML = sub;
       main = "";
       document.getElementById("maindis").innerHTML = main;
-      alert("first num is " + res + "second nun is" + sec + "sign is " + char);
       calucalate(char);
       char = e;
     }
@@ -109,41 +105,29 @@ function calucalate(e) {
   if (e == "+") {
     if (movv == 0) {
       res = parseInt(first) + parseInt(sec);
-
-      alert(res);
     } else {
       res = parseInt(res) + parseInt(sec);
-      alert(res);
     }
   }
   if (e == "*") {
     if (movv == 0) {
       res = parseInt(first) * parseInt(sec);
-
-      alert(res);
     } else {
       res = parseInt(res) * parseInt(sec);
-      alert(res);
     }
   }
   if (e == "/") {
     if (movv == 0) {
       res = parseInt(first) / parseInt(sec);
-
-      alert(res);
     } else {
       res = parseInt(res) / parseInt(sec);
-      alert(res);
     }
   }
   if (e == "-") {
     if (movv == 0) {
       res = parseInt(first) - parseInt(sec);
-
-      alert(res);
     } else {
       res = parseInt(res) - parseInt(sec);
-      alert(res);
     }
   }
 }
